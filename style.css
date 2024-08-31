@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --regular: "Ubuntu", sans-serif;
+  --modern: "Josefin Sans", sans-serif;
+  --prime: #13b8a6;
+  --second: #363434;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #363434;
+}
+
+
+/* <!-- ! ==========Nav Bar Start Here============== --> */
+
+.nav-conter {
+  width: 100%;
+  height: 13vh;
+  border-bottom: 3px solid #13b8a6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 25%;
+  height: 12vh;
+  /* border: 2px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  color: #13b8a6;
+  font-size: 25px;
+}
+.logo h1 span {
+  color: whitesmoke;
+}
+
+nav {
+  width: 60%;
+  height: 12vh;
+  /* border: 2px solid yellow; */
+  font-family: var(--regular);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 55px;
+  list-style: none;
+
+}
+nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  
+}
+
+nav ul li a:hover {
+  color: #13b8a6;
+  font-size: 17px;
+  transition: all;
+  transition-duration: .2s;
+  transform-style: inherit;
+  transform-origin: center;
+  transition-timing-function: ease-in-out;
+ 
+}
+
+#icon
+{
+    color: white;
+    font-size: 18px;
+    display: none;
+}
+
+/* <!-- ! ==========Nav Bar Start Here============== --> */
+
+
+/* /* & <!--  ==========Banner Start Here============== --> */
+
+
+.banner-contenr
+{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid yellow; */
+    position: relative;
+    
+}
+.banner-contenr img
+{
+
+  width: 100%;
+  height: 100vh;
+  aspect-ratio: 3/2;
+  position: absolute;
+  z-index: 1;
+ 
+}
+.banner-contend
+{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  /* border: 2px solid yellow; */
+  z-index: 999;
+  padding: 25px;
+  position: absolute;
+}
+.banner-contend #left
+{
+position: absolute;
+top: 38vh;
+left: 55px;
+
+border-radius: 50%;
+
+background-color: transparent;
+
+border: whitesmoke;
+}
+
+.banner-contend #left i
+{
+  font-size: 60px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  
+}
+
+.banner-contend #right
+{
+position: absolute;
+top: 38vh;
+right: 55px;
+
+border-radius: 50%;
+border: whitesmoke;
+
+background-color: transparent;
+
+}
+
+.banner-contend #right i
+{
+  font-size: 60px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  
+}
+.banner-contend h2
+{
+position: absolute;
+color: white;
+font-family: var(--modern);
+text-align: center;
+top: 25vh;
+left: 45vh;
+font-size: 35px;
+}
+
+.banner-contend p
+{
+  position: absolute;
+color: white;
+font-family: var(--modern);
+text-align:center;
+top: 35vh;
+left: 75vh;
+font-size: 18px;
+}
+
+.banner-contend #discover
+{
+  width: 145px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+ 
+  font-family: var(--modern);
+  text-align:center;
+  top: 48vh;
+  left: 90vh;
+  font-size: 16px;
+}
+
+
+/* & <!--  ==========Banner End Here============== --> */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px)
+{
+   
+    .nav-conter {
+        width: 100%;
+        justify-content: space-around;
+        gap: 75px;
+    }
+    nav{
+        display: none;
+    }
+    #icon{
+        display: block;
+        font-size: 25px;
+    }
+    .banner-contenr
+    {
+      height: 100vh;
+    }
+    .banner-contenr img
+    {
+      height: 90vh;
+      width: 100%;
+      image-rendering: auto;
+      shape-image-threshold: initial;
+      image-orientation: from-image;
+    }
+.banner-contend{
+  padding: 10px;
+}
+.banner-contend #left
+{
+  left: 15px;
+}
+.banner-contend #right
+{
+  right: 15px;
+}
+.banner-contend h2
+{
+  top: 20vh;
+left: 2vh;
+font-size: 30px;
+}
+
+.banner-contend p
+{
+  top: 45vh;
+  left: 2vh;
+  font-size: 18px;
+}
+.banner-contend #discover
+{
+  top: 35vh;
+  left: 18vh;
+  font-size: 18px;
+
+}
+}
