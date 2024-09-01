@@ -110,7 +110,7 @@ function search() {
 
   getData(searchField);
 
-  alert("done");
+  // alert("done");
 }
 
 // Search Function
