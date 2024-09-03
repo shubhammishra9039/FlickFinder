@@ -437,7 +437,7 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-.page-number{
+.page-number-continer .page-number{
   width: 90%;
   height: 90%;
   /* border: 2px solid yellow; */
@@ -447,7 +447,7 @@ nav ul li a:hover {
   gap: 45px;
 }
 
-.page-number button{
+.page-number-continer .page-number button{
 
   width: 45px;
   height: 45px;
@@ -461,12 +461,12 @@ nav ul li a:hover {
 
 
 }
-.page-number button:hover
+.page-number-continer .page-number button:hover
 {
   transform: scale(1.2,1.2);
 }
 
-.page-number .page 
+.page-number-continer .page-number .page 
 {
   box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7),
   -1px -1px 1px rgb(255, 255, 255, 0.75);
@@ -477,7 +477,7 @@ nav ul li a:hover {
   justify-content: center;
   border-radius: 15px;
 }
-.page-number .page h2{
+.page-number-continer .page-number .page h2{
   color: whitesmoke;
   font-family: var(--modern);
   font-size: 22px;
@@ -485,7 +485,7 @@ nav ul li a:hover {
    
 }
 
-.page-number .page:hover
+.page-number-continer .page-number .page:hover
 {
   transform: scale(1.1,1.1);
 }
