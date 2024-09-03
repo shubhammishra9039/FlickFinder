@@ -466,7 +466,7 @@ nav ul li a:hover {
   transform: scale(1.2,1.2);
 }
 
-.page 
+.page-number .page 
 {
   box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7),
   -1px -1px 1px rgb(255, 255, 255, 0.75);
@@ -477,7 +477,7 @@ nav ul li a:hover {
   justify-content: center;
   border-radius: 15px;
 }
-.page h2{
+.page-number .page h2{
   color: whitesmoke;
   font-family: var(--modern);
   font-size: 22px;
@@ -485,7 +485,7 @@ nav ul li a:hover {
    
 }
 
-.page:hover
+.page-number .page:hover
 {
   transform: scale(1.1,1.1);
 }
