@@ -63,15 +63,30 @@ async function getData(movieName) {
       `https://www.omdbapi.com/?s=${movieName}&apikey=b30e7222`
     );
 
+    cardDisply.innerHTML = "";
     movieData = await movieData.json();
+
     console.log(movieData);
     movieData = movieData.Search;
-    console.log(movieData);
+    console.log(movieData.length);
+
+    loaderon(false);
+
+    if (movieData.length === 0) {
+      cardDisply.style.cssText = ` display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px;
+      color: whitesmoke;`;
+      cardDisply.innerHTML = `Movie Not Available`;
+    }
 
     movieData.forEach(({ Title, Type, Year, Poster }) => {
       cardDisply.innerHTML += `
       <div class="card">
-          <img src="${Poster}" alt="" />
+          <img src=${
+            Poster === "N/A"?"Image/Broken-0004.jpg": Poster
+          } alt="" />
           <div class="info">
             <div class="conted">
               <h2>${Title} </h2>
@@ -90,25 +105,63 @@ async function getData(movieName) {
     });
     return movieData;
   } catch (Error) {
+      loaderon(false)
     cardDisply.style.cssText = ` display: flex;
     align-items: center;
     justify-content: center;
     font-size: 45px;
     color: whitesmoke;`;
     cardDisply.innerHTML = `Movie Not Available`;
+
+
   }
+  return true;
 }
 
 getData("latest");
 
 // fetch Data Using Api
 
+let loader = document.querySelector(".loader");
+console.log(loader);
+
+
+//Loder
+function loaderon(loaderTime) {
+  if (loaderTime) {
+    loader.classList.add("loader1");
+  } else {
+    loader.classList.remove("loader1");
+  }
+  // alert("Loder")
+}
+
 // Search Function
 
-function search() {
-  var searchField = document.getElementById("searchField").value.trim();
 
-  getData(searchField);
+
+
+
+
+
+
+let timeout = null;
+
+
+function search() {
+
+  cardDisply.innerHTML = "";
+  loaderon(true);
+  clearTimeout(timeout);
+
+   timeout = setTimeout(function () {
+    var searchField = document.getElementById("searchField").value.trim();
+
+    getData(searchField);
+}, 1000);
+
+
+
 
   // alert("done");
 }

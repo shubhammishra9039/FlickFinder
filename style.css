@@ -44,10 +44,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   color: #13b8a6;
-  font-size: 25px;
+  font-size: 21px;
 }
 .logo h1 span {
   color: whitesmoke;
+  font-size: 26px;
 }
 
 nav {
@@ -306,6 +307,37 @@ nav ul li a:hover {
 }
 
 /* <!-- &    ================Search Bar=========================  --> */
+/* <!-- &    ================Loder =========================  --> */
+.loader1 {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 35px;
+  background: radial-gradient(circle closest-side,#cec7c7 94%,#efeded00) right/calc(200% - 1em) 100%;
+  animation: l24 1s infinite alternate linear;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+
+  
+}
+.loader1::before {
+  content: "Loading...";
+  line-height: 1em;
+  color: whitesmoke;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+@keyframes l24{
+  100%{background-position: left}
+}
+
+
+/* <!-- &    ================Loder=========================  --> */
 /* <!-- &    ================Card Display=========================  --> */
 
 .card-contener {
@@ -313,8 +345,9 @@ nav ul li a:hover {
   height: 130vh;
   /* border: 2px solid yellow; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  position: absolute;
 }
 
 .card-contener .card-item {

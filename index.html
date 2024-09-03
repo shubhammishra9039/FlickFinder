@@ -66,7 +66,7 @@
         <h2>Moive List</h2>
         <div class="button">
           <button id="Lastest" onclick="marvel()">Marvel Movie</button>
-          <button id="HollyWood" onclick="funny()" > Funny Movie</button>
+          <button id="HollyWood" onclick="funny()">Funny Movie</button>
           <button id="BollyWood" onclick="animation()">Animation Movie</button>
           <button id="webseris" onclick="webseries() ">web series Movie</button>
         </div>
@@ -74,12 +74,18 @@
     </div>
     <!-- & ========== Movie List End  Here============== -->
 
-    <!-- &    ================Search Bar=========================  -->
+    <!-- & ================Search Bar=========================  -->
 
     <div class="search-box">
       <div class="search-bar-container">
         <i class="ri-search-eye-line ser"></i>
-        <input type="text" class="input" placeholder="Search here..." onchange="search()" id="searchField" />
+        <input
+          type="text"
+          class="input"
+          placeholder="Search here..."
+          onkeyup="search()"
+          id="searchField"
+        />
         <i class="ri-mic-2-fill mi"></i>
       </div>
     </div>
@@ -88,9 +94,8 @@
     <!-- &    ================Card Display=========================  -->
 
     <div class="card-contener">
-      <div class="card-item" id="cardDisply">
-        
-      </div>
+      <div class="loader"></div>
+      <div class="card-item" id="cardDisply"></div>
     </div>
 
     <!-- &    ================Card Display=========================  -->
