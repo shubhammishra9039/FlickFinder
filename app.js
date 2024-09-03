@@ -53,14 +53,16 @@ maginfireEl.addEventListener("click", () => {
 
 let movieData;
 
+let pagenumber=1
+
 let cardDisply = document.getElementById("cardDisply");
 
-async function getData(movieName) {
-  console.log(movieName);
+async function getData(movieName,pagenumber) {
+  console.log(movieName,pagenumber);
   cardDisply.innerHTML = "";
   try {
     movieData = await fetch(
-      `https://www.omdbapi.com/?s=${movieName}&apikey=b30e7222`
+      `https://www.omdbapi.com/?s=${movieName}&page=${pagenumber}&apikey=b30e7222`
     );
 
     cardDisply.innerHTML = "";
@@ -118,7 +120,7 @@ async function getData(movieName) {
   return true;
 }
 
-getData("latest");
+getData("latest",pagenumber);
 
 // fetch Data Using Api
 
@@ -126,7 +128,7 @@ let loader = document.querySelector(".loader");
 console.log(loader);
 
 
-//Loder
+//Loader
 function loaderon(loaderTime) {
   if (loaderTime) {
     loader.classList.add("loader1");
@@ -136,6 +138,7 @@ function loaderon(loaderTime) {
   // alert("Loder")
 }
 
+//Loader
 // Search Function
 
 
@@ -146,7 +149,7 @@ function loaderon(loaderTime) {
 
 
 let timeout = null;
-
+var searchField="latest"
 
 function search() {
 
@@ -155,9 +158,9 @@ function search() {
   clearTimeout(timeout);
 
    timeout = setTimeout(function () {
-    var searchField = document.getElementById("searchField").value.trim();
+    searchField = document.getElementById("searchField").value.trim();
 
-    getData(searchField);
+    getData(searchField,pagenumber);
 }, 1000);
 
 
@@ -171,17 +174,32 @@ function search() {
 // buttons
 
 function marvel() {
-  getData("marvel");
+
+  searchField="marvel"
+  getData(searchField,pagenumber);
 }
 function funny() {
-  getData("funny");
+  searchField="funny"
+  getData(searchField,pagenumber);
   // alert("hy")
 }
 function animation() {
-  getData("animation");
+  searchField="animation"
+  getData(searchField,pagenumber);
 }
 function webseries() {
-  getData("webseries");
+  searchField="webseries"
+  getData(searchField,pagenumber);
 }
 
 // buttons
+
+
+// Show More... pages
+
+function page(pagenumber)
+{
+ console.log(pagenumber);
+
+  getData(searchField,pagenumber);
+}

@@ -342,17 +342,17 @@ nav ul li a:hover {
 
 .card-contener {
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   /* border: 2px solid yellow; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  position: absolute;
+  position: relative;
 }
 
 .card-contener .card-item {
   width: 90%;
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -376,6 +376,14 @@ nav ul li a:hover {
   flex-direction: column;
   box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.7),
     -2px -2px 5px rgb(255, 255, 255, 0.75);
+    overflow: hidden;
+    gap: 15px;
+}
+
+
+.card:hover img
+{
+  transform: scale(1.1,1.1) ;
 }
 
 .card img {
@@ -415,6 +423,81 @@ nav ul li a:hover {
   font-size: 28px;
   color: #13b8a6;
 }
+
+
+/* & Page Number Section  */
+
+.page-number-continer
+{
+  width: 100%;
+  height: 15vh;
+  /* border: 2px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-number{
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.page-number button{
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: whitesmoke;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.7),
+  -2px -2px 5px rgb(255, 255, 255, 0.75);
+
+
+}
+.page-number button:hover
+{
+  transform: scale(1.2,1.2);
+}
+
+.page 
+{
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7),
+  -1px -1px 1px rgb(255, 255, 255, 0.75);
+  width: 185px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.page h2{
+  color: whitesmoke;
+  font-family: var(--modern);
+  font-size: 22px;
+ 
+   
+}
+
+.page:hover
+{
+  transform: scale(1.1,1.1);
+}
+
+
+
+/* & Page Number Section  */
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   .nav-conter {
