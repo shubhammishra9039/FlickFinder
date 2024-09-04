@@ -23,11 +23,21 @@ body {
 .nav-conter {
   width: 100%;
   height: 12vh;
-  border-bottom: 1px solid #13b8a6;
+  border-bottom: 1px  #13b8a6;
+  border-bottom-style:ridge;
+  
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: transparent;
+ position: absolute;
+
+  top: 0;
+  z-index: 9999;
+  bottom: 100%;
+  
 }
+
 
 .logo {
   width: 25%;
@@ -45,10 +55,26 @@ body {
   font-optical-sizing: auto;
   color: #13b8a6;
   font-size: 21px;
+  width: 160px;
+  height: 45px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7),
+  -1px -1px 1px rgb(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out;
+  
+  
+}
+
+
+.logo h1:hover
+{
+  transform: scale(1.1,1.1);
 }
 .logo h1 span {
   color: whitesmoke;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 nav {
@@ -101,6 +127,7 @@ nav ul li a:hover {
   height: 100vh;
   /* border: 2px solid yellow; */
   position: relative;
+  
 }
 .banner-contenr img {
   width: 100%;
@@ -108,6 +135,9 @@ nav ul li a:hover {
   aspect-ratio: 3/2;
   position: absolute;
   z-index: 1;
+ 
+
+   
 }
 .banner-contend {
   position: absolute;
@@ -135,10 +165,12 @@ nav ul li a:hover {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 50%;
+
 }
 .banner-contend #left i:hover {
   background-color: #13b8a6;
-  border: 2px solid whitesmoke;
+  border: 1px solid whitesmoke;
+ 
 }
 
 .banner-contend #right {
