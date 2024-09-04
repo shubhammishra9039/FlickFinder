@@ -250,10 +250,18 @@ nav ul li a:hover {
   justify-content: center;
   gap: 25px;
   flex-direction: column;
-  color: var(--prime);
-  font-family: var(--regular);
-  font-size: 28px;
+  
+  
+ 
 }
+
+.titale h2 img
+{
+  
+  height: 75px;
+  
+}
+
 
 .titale .button {
   display: flex;
@@ -263,7 +271,7 @@ nav ul li a:hover {
 }
 .titale .button button {
   width: 145px;
-  height: 30px;
+  height: 35px;
   text-transform: capitalize;
   font-size: 12px;
   font-family: var(--prime);
