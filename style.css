@@ -118,6 +118,29 @@ nav ul li a:hover {
   display: none;
 }
 
+nav ul li button
+{
+  
+  height: 32px;
+  border-top-left-radius:15px ;
+  border-bottom-right-radius:15px ;
+  width: 110px;
+  background-color: #13b8a6;
+  color: whitesmoke;
+  font-family: var(--regular);
+border: 2px solid whitesmoke;
+font-size: 16px;
+}
+
+nav ul li button:hover
+{
+  transform: scale(1.1,1.1);
+  background-color: transparent;
+  box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.7),
+    -6px -6px 10px rgb(255, 255, 255, 0.75);
+
+}
+
 /* <!-- ! ==========Nav Bar Start Here============== --> */
 
 /* /* & <!--  ==========Banner Start Here============== --> */
@@ -528,6 +551,47 @@ nav ul li a:hover {
 .page-number-continer .page-number .page:hover
 {
   transform: scale(1.1,1.1);
+}
+
+
+
+/* & Page Number Section  */
+/* & Page Number Section  */
+
+.swiper {
+  margin-top: 35px;
+  width: 95%;
+  height: 60vh;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7),
+  -5px -5px 5px rgb(255, 255, 255, 0.75);
+
+}
+.swiper-slide
+{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img
+{
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-prev::after
+{
+  color: whitesmoke;
+  font-size: 65px;
+  font-weight: 600;
+}
+.swiper-button-next::after
+{
+  color: whitesmoke;
+  font-size: 65px;
+  font-weight: 600;
+}
+.swiper-pagination span .swiper-pagination-bullet-active
+{
+  color: white;
 }
 
 

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --regular: "Ubuntu", sans-serif;
+    --modern: "Josefin Sans", sans-serif;
+    --prime: #13b8a6;
+    --second: #363434;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #363434;
+  }
+
+  
+  .card-contener {
+    width: 100%;
+    height: 120vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card-contener .card-item {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* border: 2px solid yellowgreen; */
+    padding: 15px;
+    gap: 75px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    border: 2px solid whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: var(--regular);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.7),
+      -2px -2px 5px rgb(255, 255, 255, 0.75);
+      overflow: hidden;
+      gap: 15px;
+  }
+  
+  
+  .card:hover img
+  {
+    transform: scale(1.1,1.1) ;
+  }
+  
+  .card img {
+    width: 198px;
+    height: 180px;
+    border-top-left-radius: 15px;
+  }
+  
+  .card .info {
+    padding: 7px 2px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card .info .conted h2 {
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .card .info .conted p {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .card .info .icon button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .card .info .icon button i {
+    font-size: 28px;
+    color: #13b8a6;
+  }
+
+  /* =========================================== */
+
+  .Cpation {
+    width: 100%;
+    height: 37vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titale {
+    width: 95%;
+    height: 35vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    
+    
+   
+  }
+  
+  .titale h2 img
+  {
+    
+    height: 75px;
+    
+  }

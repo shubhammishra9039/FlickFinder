@@ -16,9 +16,14 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- ! ==========Nav Bar Start Here============== -->
+  
 
     <div class="nav-conter">
       <div class="logo">
@@ -31,7 +36,8 @@
           <li><a href="">Home</a></li>
           <li><a href="">Tv Show</a></li>
           <li><a href=""> Movie </a></li>
-          <li><a href=""> Upcoming</a></li>
+          <li> Upcoming</a></li>
+          <li><button id="favbtn" onclick="favpage()">Favorite <i class="ri-heart-line"  ></i></button></li>
         </ul>
       </nav>
       <div id="icon">
@@ -63,7 +69,7 @@
     <!-- & ========== Movie LIst Start Here============== -->
     <div class="Cpation">
       <div class="titale">
-        <h2><img src="Image/text-1725415806024.png" alt=""></h2>
+        <h2><img src="Image/text-1725415806024.png" alt="" /></h2>
         <div class="button">
           <button id="Lastest" onclick="marvel()">Marvel Movie</button>
           <button id="HollyWood" onclick="funny()">Funny Movie</button>
@@ -95,7 +101,7 @@
 
     <div class="card-contener">
       <div class="loader"></div>
-      <div class="card-item" id="cardDisply"></div>
+      <div class="card-item" id="cardDisply" onclick="favorite(event)"></div>
     </div>
 
     <!-- &    ================Card Display=========================  -->
@@ -104,25 +110,56 @@
     <div class="page-number-continer">
       <div class="page-number">
         <div class="page">
-         <h2> Show more . . </h2>
+          <h2>Show more . .</h2>
         </div>
-        <button id="btn1" onclick="page(1)" >1</button>
+        <button id="btn1" onclick="page(1)">1</button>
         <button id="btn2" onclick="page(2)">2</button>
         <button id="btn3" onclick="page(3)">3</button>
         <button id="btn4" onclick="page(4)">4</button>
         <button id="btn4" onclick="page(5)">5</button>
-
       </div>
-
-
     </div>
 
+    <!-- &    ================Page Number Display=========================  -->
+    <!-- &    ================Page Number Display=========================  -->
+    <!-- banner slider -->
 
+    <!-- !-- Slider main container -->
+    -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="Image/Slider/Img1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="Image/Slider/img2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="Image/Slider/img3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="Image/Slider/img4.jpg" alt="" />
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
 
     <!-- &    ================Page Number Display=========================  -->
+    <!-- &    ================Page Number Display=========================  -->
 
+    <!-- &    ================Page Number Display=========================  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
