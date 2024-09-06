@@ -118,7 +118,7 @@ nav ul li a:hover {
   display: none;
 }
 
-nav ul li button
+.favicon button
 {
   
   height: 32px;
@@ -825,8 +825,19 @@ footer {
 /* & Footer */
 
 @media (max-width: 992px) {
+
+.banner-contend h2
+{
+  left: 40vh;
+}
+.banner-contend p
+{
+  left: 68vh;
+}
+
+
   .footer-sections {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
   }
 
@@ -847,6 +858,22 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .banner-contend h2
+  {
+    left: vh;
+    font-size: 8px;
+  }
+  .banner-contend p
+  {
+    left: 68vh;
+  }
+
+
+
+   .footer-sections {
+      flex-direction: column;
+      align-items: center;
+  }
   .newsletter input[type="email"] {
       width: 90%;
       margin: 0 auto 10px;
@@ -865,7 +892,7 @@ footer {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .nav-conter {
     width: 100%;
     justify-content: space-around;
@@ -874,6 +901,7 @@ footer {
   nav {
     display: none;
   }
+ 
   #icon {
     display: block;
     font-size: 25px;
@@ -893,24 +921,103 @@ footer {
   }
   .banner-contend #left {
     left: 15px;
+   
   }
   .banner-contend #right {
     right: 15px;
   }
   .banner-contend h2 {
-    top: 20vh;
-    left: 2vh;
-    font-size: 30px;
+    top: 35vh;
+    left: 10vh;
+    font-size: 25px;
   }
 
   .banner-contend p {
-    top: 45vh;
-    left: 2vh;
-    font-size: 18px;
+    top: 50vh;
+    left: 16vh;
+    font-size: 12px;
   }
   .banner-contend #discover {
-    top: 35vh;
-    left: 18vh;
+    top: 65vh;
+    left: 28vh;
     font-size: 18px;
+  }
+
+  .Cpation
+  {
+    height: 65vh;
+  }
+
+  .titale h2 img
+  {
+height: 55px;
+  }
+  .titale .button
+  {
+    flex-direction: column;
+    margin-bottom: 45px;
+    
+  }
+
+  .titale .button button
+  {
+    width: 185px;
+    height: 40px;
+  }
+
+  .card-contener
+  {
+    height: auto;
+    /* border: 2px solid whitesmoke; */
+  }
+
+  .card-contener .card-item
+  {
+    height: auto;
+    overflow: visible;
+  }
+
+  .page-number-continer
+  {
+    height: auto;
+    margin-top: 35px;
+  }
+  .page-number-continer .page-number
+  {
+    height: auto;
+  }
+  .page-number-continer .page-number button
+  {
+    width: 35px;
+    height: 35px;
+    font-size: 9px;
+  }
+  .page-number-continer .page-number .page 
+  {
+    display: none;
+  }
+  .swiper
+  {
+    height: auto;
+  }
+  .faq-conter
+  {
+    height: auto;
+  }
+
+  .faq-conter .faq
+  {
+    width: 85%;
+  }
+
+  .faq-conter .faq .qus
+  {
+    height: 25px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .faq-conter .faq .ans
+  {
+    font-size: 12px;
   }
 }
