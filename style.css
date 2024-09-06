@@ -897,6 +897,7 @@ footer {
     width: 100%;
     justify-content: space-around;
     gap: 75px;
+    position: static;
   }
   nav {
     display: none;
@@ -907,50 +908,58 @@ footer {
     font-size: 25px;
   }
   .banner-contenr {
-    height: 100vh;
+    height: 35vh;
+    margin-bottom: 10vh;
+    position: static;
   }
   .banner-contenr img {
-    height: 90vh;
+    height: auto;
     width: 100%;
     image-rendering: auto;
     shape-image-threshold: initial;
     image-orientation: from-image;
+    
   }
   .banner-contend {
     padding: 10px;
+    
   }
   .banner-contend #left {
     left: 15px;
+    top: 25vh;
    
   }
   .banner-contend #right {
     right: 15px;
+    top: 25vh;
   }
   .banner-contend h2 {
-    top: 35vh;
+    top: 15vh;
     left: 10vh;
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .banner-contend p {
-    top: 50vh;
-    left: 16vh;
+    top: 20vh;
+    left: 11vh;
     font-size: 12px;
   }
   .banner-contend #discover {
-    top: 65vh;
-    left: 28vh;
+    top: 28vh;
+    left: 18vh;
     font-size: 18px;
   }
 
   .Cpation
   {
-    height: 65vh;
+    
+    height: 55vh;
+    
   }
 
   .titale h2 img
   {
-height: 55px;
+height: 35px;
   }
   .titale .button
   {
@@ -1003,6 +1012,9 @@ height: 55px;
   .faq-conter
   {
     height: auto;
+  }
+  .faq-conter img{
+    height: 30px;
   }
 
   .faq-conter .faq
