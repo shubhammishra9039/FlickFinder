@@ -256,3 +256,21 @@ function favorite(e) {
     }
   }
 }
+
+// =======================================
+let faq =document.querySelectorAll(".faq")
+
+faq.forEach((faq)=>{
+  
+  faq.addEventListener("click",()=>{
+    console.log("hu");
+    if(faq.classList.contains("active"))
+    {
+      faq.classList.remove("active")
+    }
+    else
+    {
+      faq.classList.add("active")
+    }
+  })
+})

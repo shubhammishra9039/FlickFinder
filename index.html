@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlickFinder</title>
+    <link rel="icon" href="./Image/icon.jpg">
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
@@ -23,21 +24,24 @@
   </head>
   <body>
     <!-- ! ==========Nav Bar Start Here============== -->
-  
 
-    <div class="nav-conter">
+    <div class="nav-conter" id="HomeSection">
       <div class="logo">
-        <a href="#">
+        <a href="#HomeSection">
           <h1>Flick<span>Finder</span></h1></a
         >
       </div>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Tv Show</a></li>
-          <li><a href=""> Movie </a></li>
-          <li> Upcoming</a></li>
-          <li><button id="favbtn" onclick="favpage()">Favorite <i class="ri-heart-line"  ></i></button></li>
+          <li><a href="#HomeSection">Home</a></li>
+          <li><a href="#searchSection">Tv Show</a></li>
+          <li><a href="#searchSection"> Movie </a></li>
+          <li><a href="#searchSection"> Upcoming</a></li>
+          <li>
+            <button id="favbtn" onclick="favpage()">
+              Favorite <i class="ri-heart-line"></i>
+            </button>
+          </li>
         </ul>
       </nav>
       <div id="icon">
@@ -61,7 +65,7 @@
           Discover, critique, and celebrate movies <br />
           withhonest reviews and fresh takes on every film
         </p>
-        <button id="discover">Discover More..</button>
+        <button id="discover"><a href="#searchSection">Discover More..</a></button>
       </div>
     </div>
 
@@ -82,7 +86,7 @@
 
     <!-- & ================Search Bar=========================  -->
 
-    <div class="search-box">
+    <div class="search-box" id="searchSection">
       <div class="search-bar-container">
         <i class="ri-search-eye-line ser"></i>
         <input
@@ -121,7 +125,7 @@
     </div>
 
     <!-- &    ================Page Number Display=========================  -->
-    <!-- &    ================Page Number Display=========================  -->
+    <!-- &    ================Banner Slider========================  -->
     <!-- banner slider -->
 
     <!-- !-- Slider main container -->
@@ -155,10 +159,150 @@
       <div class="swiper-scrollbar"></div>
     </div>
 
-    <!-- &    ================Page Number Display=========================  -->
-    <!-- &    ================Page Number Display=========================  -->
+    <!-- &    ===============Banner Slider=========================  -->
+    <!-- &    ================ F A Q =========================  -->
+    <div class="faq-conter" id="FAQSection">
+      <img src="./Image/faq.png" alt=""  />
+      <div class="faq">
+        <div class="qus">
+          <p>1. What is this website about?</p>
+          <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="ans">
+          <p>
+            This website provides in-depth reviews, ratings, and analysis of
+            movies from different genres, release periods, and countries. You’ll
+            find user-submitted reviews, critic opinions, and recommendations
+            for all types of films.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="qus">
+          <p>2. How are movies rated?</p>
+          <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="ans">
+          <p>
+            Movies are rated using a scale of 1 to 10, based on factors like
+            acting, direction, script, cinematography, and entertainment value.
+            Both user reviews and critic reviews contribute to the overall
+            rating.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="qus">
+          <p>3. Can I submit my own reviews?</p>
+          <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="ans">
+          <p>
+            Yes! You can create an account and submit your reviews. We encourage
+            users to share their honest opinions on films they've watched.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="qus">
+          <p>4. Is the content on this website free?</p>
+          <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="ans">
+          <p>
+            Most of the content, including reviews and ratings, is free to
+            access. However, premium content such as exclusive reviews or
+            interviews may require a subscription.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="qus">
+          <p>5. How do I search for a specific movie?</p>
+          <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="ans">
+          <p>
+            You can use the search bar at the top of the website. Simply type
+            the name of the movie, director, actor, or genre to find what you're
+            looking for.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <!-- &    ================Page Number Display=========================  -->
+    <!-- &    ================ F A Q =========================  -->
+    <!-- &    ================ Footer Section =========================  -->
+    <footer>
+      <div class="container">
+          <div class="footer-sections">
+              <!-- Company Links -->
+              <div class="section">
+                  <h3>FlickFinder</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Contact us</a></li>
+                      <!-- <li><a href="#">Funny</a></li> -->
+                  </ul>
+              </div>
+
+              <!-- Products Links -->
+              <div class="section">
+                  <h3>Products</h3>
+                  <ul>
+                      <li><a href="#searchSection">TV Show</a></li>
+                      <li><a href="#searchSection">Web Series</a></li>
+                      <li><a href="#searchSection">Hollywood</a></li>
+                      <li><a href="#searchSection">Bollywood</a></li>
+                  </ul>
+              </div>
+
+              <!-- Resources Links -->
+              <div class="section">
+                  <h3>Resources</h3>
+                  <ul>
+                      <li><a href="#FAQSection">FAQs</a></li>
+                      <li><a href="#searchSection">Search Movie</a></li>
+                      <!-- <li><a href="#">Documentation</a></li>
+                      <li><a href="#">User Guide</a></li> -->
+                  </ul>
+              </div>
+
+              <!-- Newsletter -->
+              <div class="newsletter">
+                  <h3>Newsletter</h3>
+                  <form action="#">
+                      <input type="email" placeholder="mail@pagedone.com" required>
+                      <div>
+                          <input type="checkbox" id="agree" required>
+                          <label for="agree">I agree with <a href="#">Privacy Policy</a> and <a href="#">Terms of Condition</a></label>
+                      </div>
+                      <button type="submit">Send</button>
+                  </form>
+              </div>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="social-media">
+              <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+              <a href="https://x.com/" target="_blank"><i class="ri-twitter-x-line"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-line"></i></a>
+          </div>
+      </div>
+
+      <div class="copyright">
+          <p>©FlickFinder 2024, All rights reserved. Developed by <a href="https://www.linkedin.com/in/shubhammishra001/" target="_blank">Shubham Mishra</a></p>
+      </div>
+  </footer>
+
+
+
+
+    <!-- &    ================ Footer Section =========================  -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
